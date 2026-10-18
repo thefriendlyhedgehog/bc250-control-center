@@ -292,7 +292,17 @@ def test_memory_and_governor_readers(tmp_path):
     assert check.available_mib(tmp_path / "missing") == 0
     config = tmp_path / "config.toml"
     config.write_text("[frequency]\nmin = 1000\nmax = 2000\n")
-    assert check.governor_max_mhz(config) == 2000
+
+    def no_bus(_argv, **_kwargs):
+        raise FileNotFoundError("busctl")
+
+    def live(argv, **_kwargs):
+        assert argv[-3:] == [check.GOVERNOR_CURRENT_RANGE, "com.cyanskillfish.Governor.Range", "Max"]
+        return SimpleNamespace(returncode=0, stdout="u 1500\n")
+
+    assert check.governor_max_mhz(config, runner=no_bus) == 2000
+    assert check.governor_max_mhz(config, runner=live) == 1500
+    assert check.governor_max_mhz(tmp_path / "missing", runner=no_bus) is None
 
 
 def test_describe_and_summarize():

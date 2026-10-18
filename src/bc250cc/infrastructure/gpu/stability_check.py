@@ -49,6 +49,8 @@ PENDING_NAME = "estabilidad-pending.json"
 MAX_RESULTS = 100
 SAMPLE_SECONDS = 5
 GOVERNOR_CONFIG = Path("/etc/cyan-skillfish-governor-smu/config.toml")
+GOVERNOR_BUS = "com.cyanskillfish.Governor"
+GOVERNOR_CURRENT_RANGE = "/com/cyanskillfish/Governor/Range/Current"
 BC250_PCI_ID = ("0x1002", "0x13fe")
 
 
@@ -216,7 +218,22 @@ def active_cu_count(runner=subprocess.run) -> int | None:
     return None
 
 
-def governor_max_mhz(path: Path = GOVERNOR_CONFIG) -> int | None:
+def governor_max_mhz(path: Path = GOVERNOR_CONFIG, runner=subprocess.run) -> int | None:
+    """The ceiling Cyan applies now (its live D-Bus range), else its config's.
+
+    The live range is what the check runs at: a range set from the GPU page
+    or with SetRange is not written to the TOML."""
+    try:
+        done = runner(  # nosec B603
+            ["busctl", "--system", "get-property", GOVERNOR_BUS, GOVERNOR_CURRENT_RANGE,
+             f"{GOVERNOR_BUS}.Range", "Max"],
+            capture_output=True, text=True, timeout=5, check=False,
+        )
+        live = re.fullmatch(r"u (\d+)", (done.stdout or "").strip()) if done.returncode == 0 else None
+        if live:
+            return int(live.group(1))
+    except (OSError, subprocess.SubprocessError):
+        pass
     match = re.search(r"^\s*max\s*=\s*(\d+)", _read(path), re.MULTILINE)
     return int(match.group(1)) if match else None
 
@@ -357,7 +374,7 @@ class StabilityCheck:
         monitor_path = workdir / "monitor.csv"
         since = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(started))
         context = {
-            "governor_max_mhz": governor_max_mhz(),
+            "governor_max_mhz": governor_max_mhz(runner=self._runner),
             "active_cus": active_cu_count(self._runner),
             "kernel": os.uname().release,
         }

@@ -4854,5 +4854,16 @@
   "On": "Pornit",
   "HelixSR {version} is selected. Install or Update brings it in.": "HelixSR {version} este selectat. Instalează sau Actualizează îl aduce.",
   "This game is no longer in Steam's non-Steam games.": "Acest joc nu mai este printre jocurile non-Steam din Steam.",
-  "This HelixSR release is not on offer.": "Această versiune HelixSR nu este disponibilă."
+  "This HelixSR release is not on offer.": "Această versiune HelixSR nu este disponibilă.",
+  "Test stability": "Testează stabilitatea",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "Rulează memtest_vulkan timp de 10 minute la frecvențele governorului și urmărește jurnalul kernelului pentru erori ale GPU. Nu se modifică nimic; un GPU instabil poate bloca placa.",
+  "Stability check": "Test de stabilitate",
+  "Not run": "Nerulat",
+  "memtest_vulkan with an amdgpu fault watch": "memtest_vulkan cu urmărirea erorilor amdgpu",
+  "Could not open the stability check": "Nu s-a putut deschide testul de stabilitate",
+  "Opened the GPU stability check in the console.": "Testul de stabilitate al GPU a fost deschis în consolă.",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} min la {clock} MHz, margine {edge} °C · {when}",
+  "The GPU stability check could not start.": "Testul de stabilitate al GPU nu a putut porni.",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "O limită era în afara intervalului, era prea puțină memorie liberă, descărcarea memtest_vulkan nu era intactă sau lipsesc fișiere Control Center. GPU nu a fost încărcat și nu s-a modificat nimic.",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "Citiți detaliul tehnic. Închideți programele care folosesc multă memorie sau păstrați limitele în interval, apoi încercați din nou. Dacă descărcarea nu a trecut verificarea SHA-256, încercați mai târziu; dacă lipsește CLI, reinstalați Control Center."
 }

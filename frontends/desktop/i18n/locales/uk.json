@@ -4854,5 +4854,16 @@
   "On": "Увімк.",
   "HelixSR {version} is selected. Install or Update brings it in.": "Вибрано HelixSR {version}. «Встановити» або «Оновити» додасть його.",
   "This game is no longer in Steam's non-Steam games.": "Цієї гри більше немає серед сторонніх ігор у Steam.",
-  "This HelixSR release is not on offer.": "Цей випуск HelixSR недоступний."
+  "This HelixSR release is not on offer.": "Цей випуск HelixSR недоступний.",
+  "Test stability": "Перевірити стабільність",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "Запускає memtest_vulkan на 10 хвилин на частотах регулятора й стежить за журналом ядра щодо збоїв GPU. Нічого не змінюється; нестабільний GPU може завісити плату.",
+  "Stability check": "Перевірка стабільності",
+  "Not run": "Не запускалася",
+  "memtest_vulkan with an amdgpu fault watch": "memtest_vulkan зі стеженням за збоями amdgpu",
+  "Could not open the stability check": "Не вдалося відкрити перевірку стабільності",
+  "Opened the GPU stability check in the console.": "Перевірку стабільності GPU відкрито в консолі.",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} хв на {clock} МГц, edge {edge} °C · {when}",
+  "The GPU stability check could not start.": "Не вдалося запустити перевірку стабільності GPU.",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "Межа вийшла за допустимий діапазон, вільної пам'яті було замало, завантаження memtest_vulkan пошкоджене або файли Control Center неповні. GPU не навантажувався, нічого не змінено.",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "Прочитайте технічні подробиці. Закрийте програми, що займають багато пам'яті, або задайте межі в допустимому діапазоні й повторіть. Якщо завантаження не пройшло перевірку SHA-256, повторіть пізніше; якщо немає CLI, перевстановіть Control Center."
 }

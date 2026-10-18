@@ -4854,5 +4854,16 @@
   "On": "På",
   "HelixSR {version} is selected. Install or Update brings it in.": "HelixSR {version} er valgt. Installer eller Oppdater henter den.",
   "This game is no longer in Steam's non-Steam games.": "Dette spillet er ikke lenger blant ikke-Steam-spillene i Steam.",
-  "This HelixSR release is not on offer.": "Denne HelixSR-utgivelsen tilbys ikke."
+  "This HelixSR release is not on offer.": "Denne HelixSR-utgivelsen tilbys ikke.",
+  "Test stability": "Test stabilitet",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "Kjører memtest_vulkan i 10 minutter på regulatorens klokkefrekvenser og følger med på kjerneloggen etter GPU-feil. Ingenting endres; en ustabil GPU kan få kortet til å henge.",
+  "Stability check": "Stabilitetstest",
+  "Not run": "Ikke kjørt",
+  "memtest_vulkan with an amdgpu fault watch": "memtest_vulkan med overvåking av amdgpu-feil",
+  "Could not open the stability check": "Kunne ikke åpne stabilitetstesten",
+  "Opened the GPU stability check in the console.": "GPU-stabilitetstesten ble åpnet i konsollen.",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} min på {clock} MHz, kant {edge} °C · {when}",
+  "The GPU stability check could not start.": "GPU-stabilitetstesten kunne ikke starte.",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "En grense var utenfor sitt område, det var for lite ledig minne, nedlastingen av memtest_vulkan var ikke intakt, eller Control Center-filene er ufullstendige. GPU-en ble ikke belastet, og ingenting ble endret.",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "Les den tekniske detaljen. Lukk programmer som bruker mye minne, eller hold grensene innenfor området, og prøv igjen. Hvis nedlastingen feilet SHA-256-kontrollen, prøv senere; hvis CLI-en mangler, installer Control Center på nytt."
 }

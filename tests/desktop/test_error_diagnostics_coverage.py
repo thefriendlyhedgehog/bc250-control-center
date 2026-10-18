@@ -186,6 +186,14 @@ EVIDENCE: dict[str, tuple[str, ...]] = {
         "ERROR: fix-metrics is enabled, but this kernel does not expose the gpu_metrics file Cyan needs.",
         "fix-metrics was requested, but the active BC-250 kernel/runtime is known not to support Cyan's gpu_metrics overlay.",
     ),
+    # -- the GPU stability check's own refusals, from application/gpu/stability
+    #    and infrastructure/gpu/stability_check ----------------------------------
+    "BC250-GPU-007": (
+        "The check runs from 1 to 240 minutes.",
+        "Only 400 MiB of memory is available; close programs and retry.",
+        "The memtest_vulkan download does not match its published SHA-256 (00ff); nothing was installed.",
+        "The Control Center CLI was not found at /usr/share/bc250-control-center",
+    ),
     # -- the application's own invariants ------------------------------------
     "BC250-INTERNAL-001": (
         "GPU profile key cannot be empty",

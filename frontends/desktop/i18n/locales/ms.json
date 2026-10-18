@@ -4854,5 +4854,16 @@
   "On": "Hidup",
   "HelixSR {version} is selected. Install or Update brings it in.": "HelixSR {version} dipilih. Pasang atau Kemas kini akan membawanya.",
   "This game is no longer in Steam's non-Steam games.": "Permainan ini tiada lagi dalam permainan bukan Steam di Steam.",
-  "This HelixSR release is not on offer.": "Keluaran HelixSR ini tidak ditawarkan."
+  "This HelixSR release is not on offer.": "Keluaran HelixSR ini tidak ditawarkan.",
+  "Test stability": "Uji kestabilan",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "Menjalankan memtest_vulkan selama 10 minit pada jam pengatur dan memantau log kernel untuk ralat GPU. Tiada apa yang diubah; GPU yang tidak stabil boleh menyebabkan papan tergantung.",
+  "Stability check": "Semakan kestabilan",
+  "Not run": "Belum dijalankan",
+  "memtest_vulkan with an amdgpu fault watch": "memtest_vulkan dengan pemantauan ralat amdgpu",
+  "Could not open the stability check": "Tidak dapat membuka semakan kestabilan",
+  "Opened the GPU stability check in the console.": "Semakan kestabilan GPU dibuka dalam konsol.",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} min pada {clock} MHz, tepi {edge} °C · {when}",
+  "The GPU stability check could not start.": "Semakan kestabilan GPU tidak dapat dimulakan.",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "Satu had berada di luar julatnya, memori bebas terlalu sedikit, muat turun memtest_vulkan tidak utuh, atau fail Control Center tidak lengkap. GPU tidak dibebankan dan tiada apa yang diubah.",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "Baca butiran teknikal. Tutup program yang menggunakan banyak memori atau kekalkan had dalam julat, kemudian cuba lagi. Jika muat turun gagal semakan SHA-256, cuba lagi kemudian; jika CLI tiada, pasang semula Control Center."
 }

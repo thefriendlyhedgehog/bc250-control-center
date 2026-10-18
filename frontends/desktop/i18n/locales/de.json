@@ -4854,5 +4854,16 @@
   "On": "An",
   "HelixSR {version} is selected. Install or Update brings it in.": "HelixSR {version} ist gewählt. Installieren oder Aktualisieren spielt es ein.",
   "This game is no longer in Steam's non-Steam games.": "Dieses Spiel ist nicht mehr unter den Nicht-Steam-Spielen in Steam.",
-  "This HelixSR release is not on offer.": "Diese HelixSR-Version wird nicht angeboten."
+  "This HelixSR release is not on offer.": "Diese HelixSR-Version wird nicht angeboten.",
+  "Test stability": "Stabilität testen",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "Führt memtest_vulkan 10 Minuten lang mit den Takten des Governors aus und überwacht das Kernel-Protokoll auf GPU-Fehler. Es wird nichts geändert; eine instabile GPU kann das Board aufhängen.",
+  "Stability check": "Stabilitätstest",
+  "Not run": "Nicht ausgeführt",
+  "memtest_vulkan with an amdgpu fault watch": "memtest_vulkan mit Überwachung auf amdgpu-Fehler",
+  "Could not open the stability check": "Der Stabilitätstest konnte nicht geöffnet werden",
+  "Opened the GPU stability check in the console.": "Der GPU-Stabilitätstest wurde in der Konsole geöffnet.",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} min bei {clock} MHz, Edge {edge} °C · {when}",
+  "The GPU stability check could not start.": "Der GPU-Stabilitätstest konnte nicht starten.",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "Ein Grenzwert lag außerhalb seines Bereichs, zu wenig Speicher war frei, der memtest_vulkan-Download war beschädigt oder die Dateien von Control Center sind unvollständig. Die GPU wurde nicht belastet und nichts wurde geändert.",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "Lesen Sie das technische Detail. Schließen Sie Programme, die viel Speicher belegen, oder halten Sie die Grenzwerte im Bereich und versuchen Sie es erneut. Ist der Download bei der SHA-256-Prüfung durchgefallen, später erneut versuchen; fehlt die CLI, Control Center neu installieren."
 }

@@ -4854,5 +4854,16 @@
   "On": "Be",
   "HelixSR {version} is selected. Install or Update brings it in.": "A HelixSR {version} van kiválasztva. A Telepítés vagy a Frissítés hozza.",
   "This game is no longer in Steam's non-Steam games.": "Ez a játék már nincs a Steam nem Steam-es játékai között.",
-  "This HelixSR release is not on offer.": "Ez a HelixSR-kiadás nem érhető el."
+  "This HelixSR release is not on offer.": "Ez a HelixSR-kiadás nem érhető el.",
+  "Test stability": "Stabilitás tesztelése",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "10 percig futtatja a memtest_vulkant a szabályozó órajelein, és figyeli a kernelnaplót GPU-hibák után. Semmi sem változik; egy instabil GPU lefagyaszthatja a lapot.",
+  "Stability check": "Stabilitásteszt",
+  "Not run": "Nem futott",
+  "memtest_vulkan with an amdgpu fault watch": "memtest_vulkan amdgpu-hibafigyeléssel",
+  "Could not open the stability check": "A stabilitásteszt nem nyitható meg",
+  "Opened the GPU stability check in the console.": "A GPU stabilitástesztje megnyílt a konzolban.",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} perc {clock} MHz-en, perem {edge} °C · {when}",
+  "The GPU stability check could not start.": "A GPU stabilitástesztje nem tudott elindulni.",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "Egy határérték kívül esett a tartományán, túl kevés volt a szabad memória, a memtest_vulkan letöltése sérült, vagy hiányoznak a Control Center fájljai. A GPU nem kapott terhelést, és semmi sem változott.",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "Olvassa el a technikai részleteket. Zárja be a sok memóriát használó programokat, vagy tartsa a határértékeket a tartományban, és próbálja újra. Ha a letöltés elbukott az SHA-256 ellenőrzésen, próbálja később; ha hiányzik a CLI, telepítse újra a Control Centert."
 }

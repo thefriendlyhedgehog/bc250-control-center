@@ -557,6 +557,12 @@ class SistemaService:
     def abrir_laboratorio_voltaje_gpu(self):
         return self.repo.abrir_laboratorio_voltaje_gpu()
 
+    def abrir_prueba_estabilidad_gpu(self, minutos=10):
+        return self.repo.abrir_prueba_estabilidad_gpu(minutos)
+
+    def ultima_prueba_estabilidad_gpu(self):
+        return self.repo.ultima_prueba_estabilidad_gpu()
+
     def aplicar_laboratorio_voltaje_gpu(self, nivel):
         return self.repo.aplicar_laboratorio_voltaje_gpu(nivel)
 

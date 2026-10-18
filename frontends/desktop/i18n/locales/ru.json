@@ -4854,5 +4854,16 @@
   "On": "Вкл.",
   "HelixSR {version} is selected. Install or Update brings it in.": "Выбран HelixSR {version}. «Установить» или «Обновить» добавит его.",
   "This game is no longer in Steam's non-Steam games.": "Этой игры больше нет среди сторонних игр в Steam.",
-  "This HelixSR release is not on offer.": "Этот выпуск HelixSR недоступен."
+  "This HelixSR release is not on offer.": "Этот выпуск HelixSR недоступен.",
+  "Test stability": "Проверить стабильность",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "Запускает memtest_vulkan на 10 минут на частотах регулятора и следит за журналом ядра на предмет сбоев GPU. Ничего не меняется; нестабильный GPU может подвесить плату.",
+  "Stability check": "Проверка стабильности",
+  "Not run": "Не запускалась",
+  "memtest_vulkan with an amdgpu fault watch": "memtest_vulkan с отслеживанием сбоев amdgpu",
+  "Could not open the stability check": "Не удалось открыть проверку стабильности",
+  "Opened the GPU stability check in the console.": "Проверка стабильности GPU открыта в консоли.",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} мин на {clock} МГц, edge {edge} °C · {when}",
+  "The GPU stability check could not start.": "Не удалось запустить проверку стабильности GPU.",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "Предел вышел за допустимый диапазон, свободной памяти было слишком мало, загрузка memtest_vulkan повреждена или файлы Control Center неполные. GPU не нагружался, ничего не изменено.",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "Прочитайте технические подробности. Закройте программы, занимающие много памяти, или задайте пределы в допустимом диапазоне и повторите. Если загрузка не прошла проверку SHA-256, повторите позже; если нет CLI, переустановите Control Center."
 }

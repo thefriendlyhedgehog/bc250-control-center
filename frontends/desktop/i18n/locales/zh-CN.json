@@ -4854,5 +4854,16 @@
   "On": "开",
   "HelixSR {version} is selected. Install or Update brings it in.": "已选择 HelixSR {version}。点击“安装”或“更新”即可装入。",
   "This game is no longer in Steam's non-Steam games.": "此游戏已不在 Steam 的非 Steam 游戏中。",
-  "This HelixSR release is not on offer.": "此 HelixSR 版本不可用。"
+  "This HelixSR release is not on offer.": "此 HelixSR 版本不可用。",
+  "Test stability": "测试稳定性",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "在调速器的频率下运行 memtest_vulkan 10 分钟，并监视内核日志中的 GPU 故障。不会更改任何设置；不稳定的 GPU 可能导致主板挂起。",
+  "Stability check": "稳定性检查",
+  "Not run": "未运行",
+  "memtest_vulkan with an amdgpu fault watch": "带 amdgpu 故障监视的 memtest_vulkan",
+  "Could not open the stability check": "无法打开稳定性检查",
+  "Opened the GPU stability check in the console.": "已在控制台中打开 GPU 稳定性检查。",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} 分钟，{clock} MHz，边缘 {edge} °C · {when}",
+  "The GPU stability check could not start.": "无法启动 GPU 稳定性检查。",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "某个限制超出范围、可用内存太少、memtest_vulkan 下载不完整，或 Control Center 文件不全。GPU 未被加载，也未更改任何内容。",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "请查看技术详情。关闭占用大量内存的程序，或将限制保持在范围内，然后重试。如果下载未通过 SHA-256 校验，请稍后重试；如果缺少 CLI，请重新安装 Control Center。"
 }

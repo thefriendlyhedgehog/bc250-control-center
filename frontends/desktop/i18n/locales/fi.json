@@ -4854,5 +4854,16 @@
   "On": "Päällä",
   "HelixSR {version} is selected. Install or Update brings it in.": "HelixSR {version} on valittu. Asenna tai Päivitä tuo sen.",
   "This game is no longer in Steam's non-Steam games.": "Tämä peli ei ole enää Steamin muiden kuin Steam-pelien joukossa.",
-  "This HelixSR release is not on offer.": "Tätä HelixSR-julkaisua ei ole tarjolla."
+  "This HelixSR release is not on offer.": "Tätä HelixSR-julkaisua ei ole tarjolla.",
+  "Test stability": "Testaa vakaus",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "Ajaa memtest_vulkania 10 minuuttia ohjaimen kellotaajuuksilla ja seuraa ytimen lokia GPU-virheiden varalta. Mitään ei muuteta; epävakaa GPU voi jumittaa levyn.",
+  "Stability check": "Vakaustesti",
+  "Not run": "Ei ajettu",
+  "memtest_vulkan with an amdgpu fault watch": "memtest_vulkan ja amdgpu-virheiden seuranta",
+  "Could not open the stability check": "Vakaustestiä ei voitu avata",
+  "Opened the GPU stability check in the console.": "GPU:n vakaustesti avattiin konsolissa.",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} min {clock} MHz:llä, reuna {edge} °C · {when}",
+  "The GPU stability check could not start.": "GPU:n vakaustestiä ei voitu käynnistää.",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "Jokin raja oli alueensa ulkopuolella, vapaata muistia oli liian vähän, memtest_vulkanin lataus oli vioittunut tai Control Centerin tiedostot ovat puutteelliset. GPU:ta ei kuormitettu eikä mitään muutettu.",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "Lue tekninen tieto. Sulje paljon muistia käyttävät ohjelmat tai pidä rajat alueella ja yritä uudelleen. Jos lataus ei läpäissyt SHA-256-tarkistusta, yritä myöhemmin; jos CLI puuttuu, asenna Control Center uudelleen."
 }

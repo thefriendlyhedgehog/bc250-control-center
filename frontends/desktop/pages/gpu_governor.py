@@ -5483,6 +5483,43 @@ class GpuGovernorPage(QWidget):
             refresh=False,
         )
 
+    def run_stability_check(self) -> None:
+        def success(_result: object) -> None:
+            self._last_operation_summary = "Opened the GPU stability check in the console."
+            self.last_operation_line.set_values("Stability check", self._last_operation_summary)
+
+        self._run_backend_action(
+            lambda: self.controller.abrir_prueba_estabilidad_gpu(10),
+            success,
+            "Could not open the stability check",
+            refresh=False,
+        )
+
+    def _sync_stability_line(self) -> None:
+        """Show the newest stability check in the GPU view's stability panel."""
+        view = getattr(self, "_redesigned_gpu_view", None)
+        if view is None:
+            return
+        reader = getattr(self.controller, "ultima_prueba_estabilidad_gpu", None)
+        try:
+            result = reader() if callable(reader) else None
+        except (OSError, ValueError, TypeError):
+            result = None
+        if result is None:
+            view.set_stability("Not run", tr("memtest_vulkan with an amdgpu fault watch"))
+            return
+        when = time.strftime("%Y-%m-%d %H:%M", time.localtime(result.at))
+        view.set_stability(
+            result.outcome,
+            tr_format(
+                "{minutes} min at {clock} MHz, edge {edge} °C · {when}",
+                minutes=max(result.seconds // 60, 0),
+                clock=result.average_clock_mhz or "--",
+                edge=result.max_edge_c or "--",
+                when=when,
+            ),
+        )
+
     def open_voltage_lab(self) -> None:
         self._sync_voltage_lab(self.current_state)
         self.page_stack.setCurrentWidget(self.overview_page)
@@ -6244,6 +6281,7 @@ class GpuGovernorPage(QWidget):
         )
         self._set_backend_profile_mode(is_oberon)
         self._sync_cyan_compatibility(gpu, is_oberon=is_oberon)
+        self._sync_stability_line()
         frequency, mclk, minimum, maximum = self._sync_range_state(gpu)
         telemetry = self._telemetry_copy(gpu, perf)
 

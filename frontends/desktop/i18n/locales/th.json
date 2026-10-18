@@ -4854,5 +4854,16 @@
   "On": "เปิด",
   "HelixSR {version} is selected. Install or Update brings it in.": "เลือก HelixSR {version} แล้ว กด ติดตั้ง หรือ อัปเดต เพื่อนำมาใช้",
   "This game is no longer in Steam's non-Steam games.": "เกมนี้ไม่อยู่ในเกมที่ไม่ใช่ของ Steam ใน Steam แล้ว",
-  "This HelixSR release is not on offer.": "ไม่มีรุ่นนี้ของ HelixSR ให้เลือก"
+  "This HelixSR release is not on offer.": "ไม่มีรุ่นนี้ของ HelixSR ให้เลือก",
+  "Test stability": "ทดสอบความเสถียร",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "รัน memtest_vulkan เป็นเวลา 10 นาทีที่ความถี่ของตัวควบคุม และเฝ้าดูบันทึกเคอร์เนลเพื่อหาข้อผิดพลาดของ GPU ไม่มีการเปลี่ยนแปลงใด ๆ แต่ GPU ที่ไม่เสถียรอาจทำให้บอร์ดค้างได้",
+  "Stability check": "การตรวจสอบความเสถียร",
+  "Not run": "ยังไม่ได้รัน",
+  "memtest_vulkan with an amdgpu fault watch": "memtest_vulkan พร้อมเฝ้าดูข้อผิดพลาดของ amdgpu",
+  "Could not open the stability check": "ไม่สามารถเปิดการตรวจสอบความเสถียรได้",
+  "Opened the GPU stability check in the console.": "เปิดการตรวจสอบความเสถียรของ GPU ในคอนโซลแล้ว",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} นาทีที่ {clock} MHz, ขอบ {edge} °C · {when}",
+  "The GPU stability check could not start.": "ไม่สามารถเริ่มการตรวจสอบความเสถียรของ GPU ได้",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "มีขีดจำกัดที่อยู่นอกช่วง หน่วยความจำว่างน้อยเกินไป ไฟล์ memtest_vulkan ที่ดาวน์โหลดไม่สมบูรณ์ หรือไฟล์ของ Control Center ไม่ครบ GPU ไม่ได้ถูกใช้งานหนักและไม่มีการเปลี่ยนแปลงใด ๆ",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "อ่านรายละเอียดทางเทคนิค ปิดโปรแกรมที่ใช้หน่วยความจำมาก หรือตั้งขีดจำกัดให้อยู่ในช่วง แล้วลองอีกครั้ง หากการดาวน์โหลดไม่ผ่านการตรวจ SHA-256 ให้ลองใหม่ภายหลัง หากไม่มี CLI ให้ติดตั้ง Control Center ใหม่"
 }

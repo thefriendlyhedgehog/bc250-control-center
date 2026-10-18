@@ -4854,5 +4854,16 @@
   "On": "Nyala",
   "HelixSR {version} is selected. Install or Update brings it in.": "HelixSR {version} dipilih. Pasang atau Perbarui akan membawanya.",
   "This game is no longer in Steam's non-Steam games.": "Game ini sudah tidak ada di game non-Steam Steam.",
-  "This HelixSR release is not on offer.": "Rilis HelixSR ini tidak tersedia."
+  "This HelixSR release is not on offer.": "Rilis HelixSR ini tidak tersedia.",
+  "Test stability": "Uji stabilitas",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "Menjalankan memtest_vulkan selama 10 menit pada clock pengatur dan memantau log kernel untuk kesalahan GPU. Tidak ada yang diubah; GPU yang tidak stabil dapat membuat papan macet.",
+  "Stability check": "Pemeriksaan stabilitas",
+  "Not run": "Belum dijalankan",
+  "memtest_vulkan with an amdgpu fault watch": "memtest_vulkan dengan pemantauan kesalahan amdgpu",
+  "Could not open the stability check": "Tidak dapat membuka pemeriksaan stabilitas",
+  "Opened the GPU stability check in the console.": "Pemeriksaan stabilitas GPU dibuka di konsol.",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} mnt pada {clock} MHz, tepi {edge} °C · {when}",
+  "The GPU stability check could not start.": "Pemeriksaan stabilitas GPU tidak dapat dimulai.",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "Sebuah batas berada di luar rentangnya, memori kosong terlalu sedikit, unduhan memtest_vulkan tidak utuh, atau berkas Control Center tidak lengkap. GPU tidak dibebani dan tidak ada yang diubah.",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "Baca detail teknis. Tutup program yang memakai banyak memori atau jaga batas tetap dalam rentang, lalu coba lagi. Jika unduhan gagal pemeriksaan SHA-256, coba lagi nanti; jika CLI tidak ada, pasang ulang Control Center."
 }

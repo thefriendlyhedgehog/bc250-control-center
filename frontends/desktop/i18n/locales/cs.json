@@ -4854,5 +4854,16 @@
   "On": "Zapnuto",
   "HelixSR {version} is selected. Install or Update brings it in.": "Vybráno HelixSR {version}. Instalovat nebo Aktualizovat ho přidá.",
   "This game is no longer in Steam's non-Steam games.": "Tato hra už není mezi hrami mimo Steam ve Steamu.",
-  "This HelixSR release is not on offer.": "Toto vydání HelixSR není k dispozici."
+  "This HelixSR release is not on offer.": "Toto vydání HelixSR není k dispozici.",
+  "Test stability": "Otestovat stabilitu",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "Spustí memtest_vulkan na 10 minut na frekvencích regulátoru a sleduje protokol jádra kvůli chybám GPU. Nic se nemění; nestabilní GPU může desku zamrazit.",
+  "Stability check": "Test stability",
+  "Not run": "Nespuštěno",
+  "memtest_vulkan with an amdgpu fault watch": "memtest_vulkan se sledováním chyb amdgpu",
+  "Could not open the stability check": "Test stability se nepodařilo otevřít",
+  "Opened the GPU stability check in the console.": "Test stability GPU byl otevřen v konzoli.",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} min na {clock} MHz, okraj {edge} °C · {when}",
+  "The GPU stability check could not start.": "Test stability GPU se nepodařilo spustit.",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "Limit byl mimo rozsah, bylo málo volné paměti, stažený memtest_vulkan byl poškozený nebo chybí soubory Control Center. GPU nebylo zatíženo a nic se nezměnilo.",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "Přečtěte si technické podrobnosti. Zavřete programy, které používají hodně paměti, nebo držte limity v rozsahu a zkuste to znovu. Pokud stažení neprošlo kontrolou SHA-256, zkuste to později; pokud chybí CLI, přeinstalujte Control Center."
 }

@@ -4854,5 +4854,16 @@
   "On": "Вкл.",
   "HelixSR {version} is selected. Install or Update brings it in.": "Избран е HelixSR {version}. „Инсталиране“ или „Обновяване“ ще го постави.",
   "This game is no longer in Steam's non-Steam games.": "Тази игра вече не е сред игрите извън Steam в Steam.",
-  "This HelixSR release is not on offer.": "Това издание на HelixSR не е налично."
+  "This HelixSR release is not on offer.": "Това издание на HelixSR не е налично.",
+  "Test stability": "Тест за стабилност",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "Изпълнява memtest_vulkan за 10 минути на честотите на регулатора и следи журнала на ядрото за грешки на GPU. Нищо не се променя; нестабилен GPU може да блокира платката.",
+  "Stability check": "Проверка на стабилността",
+  "Not run": "Не е изпълнявана",
+  "memtest_vulkan with an amdgpu fault watch": "memtest_vulkan със следене за грешки на amdgpu",
+  "Could not open the stability check": "Проверката на стабилността не можа да се отвори",
+  "Opened the GPU stability check in the console.": "Проверката на стабилността на GPU е отворена в конзолата.",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} мин при {clock} MHz, ръб {edge} °C · {when}",
+  "The GPU stability check could not start.": "Проверката на стабилността на GPU не можа да започне.",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "Граница беше извън обхвата си, свободната памет беше твърде малко, изтеглянето на memtest_vulkan беше повредено или файловете на Control Center са непълни. GPU не беше натоварен и нищо не е променено.",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "Прочетете техническите подробности. Затворете програмите, които използват много памет, или дръжте границите в обхвата и опитайте отново. Ако изтеглянето не мина проверката SHA-256, опитайте по-късно; ако липсва CLI, преинсталирайте Control Center."
 }

@@ -4854,5 +4854,16 @@
   "On": "Bật",
   "HelixSR {version} is selected. Install or Update brings it in.": "Đã chọn HelixSR {version}. Cài đặt hoặc Cập nhật sẽ đưa nó vào.",
   "This game is no longer in Steam's non-Steam games.": "Trò chơi này không còn trong danh sách trò chơi không phải Steam của Steam.",
-  "This HelixSR release is not on offer.": "Bản phát hành HelixSR này không có sẵn."
+  "This HelixSR release is not on offer.": "Bản phát hành HelixSR này không có sẵn.",
+  "Test stability": "Kiểm tra độ ổn định",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "Chạy memtest_vulkan trong 10 phút ở xung nhịp của bộ điều chỉnh và theo dõi nhật ký kernel để tìm lỗi GPU. Không có gì bị thay đổi; GPU không ổn định có thể làm treo bo mạch.",
+  "Stability check": "Kiểm tra ổn định",
+  "Not run": "Chưa chạy",
+  "memtest_vulkan with an amdgpu fault watch": "memtest_vulkan kèm theo dõi lỗi amdgpu",
+  "Could not open the stability check": "Không thể mở bài kiểm tra ổn định",
+  "Opened the GPU stability check in the console.": "Đã mở bài kiểm tra ổn định GPU trong bảng điều khiển.",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} phút ở {clock} MHz, cạnh {edge} °C · {when}",
+  "The GPU stability check could not start.": "Không thể bắt đầu kiểm tra ổn định GPU.",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "Một giới hạn nằm ngoài phạm vi, bộ nhớ trống quá ít, bản tải memtest_vulkan không nguyên vẹn hoặc tệp của Control Center bị thiếu. GPU không bị tải và không có gì thay đổi.",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "Đọc chi tiết kỹ thuật. Đóng các chương trình dùng nhiều bộ nhớ hoặc giữ giới hạn trong phạm vi rồi thử lại. Nếu bản tải không qua kiểm tra SHA-256, hãy thử lại sau; nếu thiếu CLI, hãy cài lại Control Center."
 }

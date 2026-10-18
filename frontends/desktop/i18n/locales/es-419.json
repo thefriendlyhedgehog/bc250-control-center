@@ -4854,5 +4854,16 @@
   "On": "Activado",
   "HelixSR {version} is selected. Install or Update brings it in.": "HelixSR {version} está seleccionado. Instalar o Actualizar lo agrega.",
   "This game is no longer in Steam's non-Steam games.": "Este juego ya no está entre los juegos que no son de Steam en Steam.",
-  "This HelixSR release is not on offer.": "Esta versión de HelixSR no está disponible."
+  "This HelixSR release is not on offer.": "Esta versión de HelixSR no está disponible.",
+  "Test stability": "Probar estabilidad",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "Ejecuta memtest_vulkan durante 10 minutos con los relojes del gobernador y vigila el registro del kernel en busca de fallas de la GPU. No se cambia nada; una GPU inestable puede colgar la placa.",
+  "Stability check": "Prueba de estabilidad",
+  "Not run": "Sin ejecutar",
+  "memtest_vulkan with an amdgpu fault watch": "memtest_vulkan con vigilancia de fallas de amdgpu",
+  "Could not open the stability check": "No se pudo abrir la prueba de estabilidad",
+  "Opened the GPU stability check in the console.": "Se abrió la prueba de estabilidad de la GPU en la consola.",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} min a {clock} MHz, borde {edge} °C · {when}",
+  "The GPU stability check could not start.": "No se pudo iniciar la prueba de estabilidad de la GPU.",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "Un límite estaba fuera de su rango, había poca memoria libre, la descarga de memtest_vulkan no estaba íntegra o faltan archivos de Control Center. La GPU no se cargó y no se cambió nada.",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "Lee el detalle técnico. Cierra programas que usen mucha memoria o mantén los límites dentro del rango y vuelve a intentarlo. Si la descarga falló la verificación SHA-256, inténtalo más tarde; si falta la CLI, reinstala Control Center."
 }

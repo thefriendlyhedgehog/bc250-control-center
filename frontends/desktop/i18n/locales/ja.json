@@ -4854,5 +4854,16 @@
   "On": "オン",
   "HelixSR {version} is selected. Install or Update brings it in.": "HelixSR {version} を選択しました。「インストール」または「更新」で導入されます。",
   "This game is no longer in Steam's non-Steam games.": "このゲームは Steam の非 Steam ゲームにもうありません。",
-  "This HelixSR release is not on offer.": "この HelixSR のリリースは提供されていません。"
+  "This HelixSR release is not on offer.": "この HelixSR のリリースは提供されていません。",
+  "Test stability": "安定性をテスト",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "ガバナーのクロックで memtest_vulkan を 10 分間実行し、カーネルログで GPU の障害を監視します。何も変更しませんが、不安定な GPU はボードをハングさせることがあります。",
+  "Stability check": "安定性チェック",
+  "Not run": "未実行",
+  "memtest_vulkan with an amdgpu fault watch": "amdgpu 障害監視付きの memtest_vulkan",
+  "Could not open the stability check": "安定性チェックを開けませんでした",
+  "Opened the GPU stability check in the console.": "GPU 安定性チェックをコンソールで開きました。",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} 分、{clock} MHz、エッジ {edge} °C · {when}",
+  "The GPU stability check could not start.": "GPU 安定性チェックを開始できませんでした。",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "制限値が範囲外だった、空きメモリが少なすぎた、memtest_vulkan のダウンロードが破損していた、または Control Center のファイルが不足しています。GPU に負荷はかけておらず、何も変更していません。",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "技術的な詳細を確認してください。メモリを多く使うプログラムを閉じるか、制限値を範囲内にしてから再試行してください。ダウンロードが SHA-256 チェックに失敗した場合は後で再試行し、CLI がない場合は Control Center を再インストールしてください。"
 }

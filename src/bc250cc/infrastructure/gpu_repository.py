@@ -2,6 +2,7 @@ import os
 import re
 import shlex
 import subprocess
+import sys
 import time
 from pathlib import Path
 
@@ -1506,6 +1507,27 @@ class GPURepository:
         return self._abrir_terminal(
             shlex.quote(str(script)) + " menu", "BC250 GPU Voltage Lab"
         )
+
+    def abrir_prueba_estabilidad_gpu(self, minutos=10):
+        """Run the GPU stability check in the console: memtest_vulkan at the
+        governor's live clocks, with the amdgpu fault watch. User space only."""
+        root = Path(__file__).resolve().parents[3]
+        if not (root / "frontends" / "cli.py").exists():
+            raise RuntimeError(f"The Control Center CLI was not found at {root}")
+        command = (
+            f"cd {shlex.quote(str(root))} && "
+            f"PYTHONPATH={shlex.quote(str(root / 'src'))} "
+            f"{shlex.quote(sys.executable or 'python3')} -m frontends.cli "
+            f"stability run --minutes {int(minutos)}"
+        )
+        return self._abrir_terminal(command, "GPU stability check")
+
+    def ultima_prueba_estabilidad_gpu(self):
+        """The newest recorded stability check, or None."""
+        from bc250cc.infrastructure.gpu import stability_check
+
+        results = stability_check.read_results()
+        return results[-1] if results else None
 
     def aplicar_laboratorio_voltaje_gpu(self, nivel):
         nivel = int(nivel)

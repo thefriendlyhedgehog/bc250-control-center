@@ -4854,5 +4854,16 @@
   "On": "Aan",
   "HelixSR {version} is selected. Install or Update brings it in.": "HelixSR {version} is gekozen. Installeren of Bijwerken haalt het binnen.",
   "This game is no longer in Steam's non-Steam games.": "Deze game staat niet meer bij de niet-Steam-games in Steam.",
-  "This HelixSR release is not on offer.": "Deze HelixSR-release wordt niet aangeboden."
+  "This HelixSR release is not on offer.": "Deze HelixSR-release wordt niet aangeboden.",
+  "Test stability": "Stabiliteit testen",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "Draait memtest_vulkan 10 minuten op de kloksnelheden van de governor en houdt het kernellog in de gaten voor GPU-fouten. Er wordt niets gewijzigd; een instabiele GPU kan het board laten vastlopen.",
+  "Stability check": "Stabiliteitstest",
+  "Not run": "Niet uitgevoerd",
+  "memtest_vulkan with an amdgpu fault watch": "memtest_vulkan met bewaking op amdgpu-fouten",
+  "Could not open the stability check": "Kon de stabiliteitstest niet openen",
+  "Opened the GPU stability check in the console.": "De GPU-stabiliteitstest is geopend in de console.",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} min op {clock} MHz, rand {edge} °C · {when}",
+  "The GPU stability check could not start.": "De GPU-stabiliteitstest kon niet starten.",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "Een limiet lag buiten het bereik, er was te weinig geheugen vrij, de download van memtest_vulkan was niet intact of bestanden van Control Center ontbreken. De GPU is niet belast en er is niets gewijzigd.",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "Lees het technische detail. Sluit programma's die veel geheugen gebruiken of houd de limieten binnen het bereik en probeer het opnieuw. Faalde de download op de SHA-256-controle, probeer het later; ontbreekt de CLI, installeer Control Center opnieuw."
 }

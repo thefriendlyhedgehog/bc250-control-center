@@ -420,9 +420,13 @@ def install_redesigned_gpu_view(page) -> GpuGovernorView:
     view.export_to_decky_requested.connect(lambda: _export_profiles_to_decky(page, view))
     view.voltage_lab_requested.connect(page.open_voltage_lab)
     view.config_open_requested.connect(page._open_governor_config)
+    view.stability_check_requested.connect(page.run_stability_check)
 
     # 4 · backend → view
     _wrap_apply_state(page, view)
+
+    # The newest stability check is on disk, so it can show before a refresh.
+    page._sync_stability_line()
 
     # 5 · initial state if a refresh already happened
     current = getattr(page, "current_state", None)

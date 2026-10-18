@@ -163,6 +163,17 @@ _RULES = (
         "Fix metrics makes Cyan publish its own gpu_metrics file. The running kernel does not expose the file it needs to replace, so the governor refuses to start while that option is on. Nothing on the hardware was changed.",
         "Turn off Fix metrics in Cyan kernel compatibility and apply again. Leave Fix frequencies off too if the start still fails. A BC-250 patched kernel is the other way out.",
     ),
+    # The GPU stability check refuses to start before it loads anything; its
+    # "not found" and "memory" wording would otherwise land on broader rules.
+    _Rule(
+        "BC250-GPU-007",
+        (r"the check runs from \d+ to \d+ minutes", r"temperature limits must be between",
+         r"the load needs at least \d+ mib", r"mib of memory is available; close programs",
+         r"the memtest_vulkan (?:download|archive)", r"control center cli was not found"),
+        "The GPU stability check could not start.",
+        "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.",
+        "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.",
+    ),
     # Before the broad Compute Units and missing-command rules: their patterns
     # ("umr", "no such file or directory") also match this text, and their
     # advice does not bring a broken UMR back.

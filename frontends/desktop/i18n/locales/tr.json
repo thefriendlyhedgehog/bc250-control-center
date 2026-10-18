@@ -4854,5 +4854,16 @@
   "On": "Açık",
   "HelixSR {version} is selected. Install or Update brings it in.": "HelixSR {version} seçildi. Yükle veya Güncelle onu getirir.",
   "This game is no longer in Steam's non-Steam games.": "Bu oyun artık Steam'deki Steam dışı oyunlar arasında değil.",
-  "This HelixSR release is not on offer.": "Bu HelixSR sürümü sunulmuyor."
+  "This HelixSR release is not on offer.": "Bu HelixSR sürümü sunulmuyor.",
+  "Test stability": "Kararlılığı test et",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "Denetleyicinin saat hızlarında memtest_vulkan'ı 10 dakika çalıştırır ve çekirdek günlüğünü GPU hataları için izler. Hiçbir şey değiştirilmez; kararsız bir GPU kartı kilitleyebilir.",
+  "Stability check": "Kararlılık testi",
+  "Not run": "Çalıştırılmadı",
+  "memtest_vulkan with an amdgpu fault watch": "amdgpu hata izlemeli memtest_vulkan",
+  "Could not open the stability check": "Kararlılık testi açılamadı",
+  "Opened the GPU stability check in the console.": "GPU kararlılık testi konsolda açıldı.",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{clock} MHz'de {minutes} dk, kenar {edge} °C · {when}",
+  "The GPU stability check could not start.": "GPU kararlılık testi başlatılamadı.",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "Bir sınır aralığın dışındaydı, boş bellek çok azdı, memtest_vulkan indirmesi bozuktu ya da Control Center dosyaları eksik. GPU yüklenmedi ve hiçbir şey değiştirilmedi.",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "Teknik ayrıntıyı okuyun. Çok bellek kullanan programları kapatın ya da sınırları aralıkta tutun ve tekrar deneyin. İndirme SHA-256 denetiminden geçmediyse daha sonra deneyin; CLI eksikse Control Center'ı yeniden kurun."
 }

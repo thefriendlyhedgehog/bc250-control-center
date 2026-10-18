@@ -1407,6 +1407,7 @@ class GpuGovernorView(QWidget):
         high_points_toggle_requested(bool)
         voltage_lab_requested()
         config_open_requested()
+        stability_check_requested()
 
     Inputs::
 
@@ -1424,6 +1425,7 @@ class GpuGovernorView(QWidget):
     high_points_toggle_requested = pyqtSignal(bool)
     voltage_lab_requested = pyqtSignal()
     config_open_requested = pyqtSignal()
+    stability_check_requested = pyqtSignal()
 
     def __init__(self, parent: QWidget | None = None):
         super().__init__(parent)
@@ -1765,6 +1767,33 @@ class GpuGovernorView(QWidget):
         lab_box.addLayout(lab_actions)
         card.body.addWidget(lab_panel)
 
+        # A verifying load at the clocks set above; nothing is changed. The
+        # page fills in the newest result with ``set_stability``.
+        stability_panel, stability_box = _subpanel("")
+        self.stability_panel = stability_panel
+        stability_head = QHBoxLayout()
+        stability_head.setSpacing(10)
+        stability_title = QLabel(tr("Stability check"))
+        stability_title.setProperty("cardTitle", True)
+        stability_head.addWidget(stability_title, 1)
+        self._stability_outcome = QLabel(tr("Not run"))
+        self._stability_outcome.setProperty("rangeReadout", True)
+        stability_head.addWidget(self._stability_outcome, 0, Qt.AlignmentFlag.AlignRight)
+        stability_box.addLayout(stability_head)
+        self._stability_detail = _caption("memtest_vulkan with an amdgpu fault watch")
+        stability_box.addWidget(self._stability_detail)
+        self.stability_button = QPushButton(tr("Test stability"))
+        self.stability_button.setProperty("ghostButton", True)
+        self.stability_button.setCursor(Qt.CursorShape.PointingHandCursor)
+        self.stability_button.setToolTip(
+            tr(
+                "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board."
+            )
+        )
+        self.stability_button.clicked.connect(self.stability_check_requested)
+        stability_box.addWidget(self.stability_button)
+        card.body.addWidget(stability_panel)
+
         risk_panel, risk_box = _subpanel("")
         self._risk_panel = risk_panel
         risk_panel.setProperty("riskPanel", True)
@@ -1870,6 +1899,11 @@ class GpuGovernorView(QWidget):
     def follow_hardware_again(self) -> None:
         """Called once a staged range has actually been applied."""
         self._follow_hardware = True
+
+    def set_stability(self, outcome: str, detail: str) -> None:
+        """The newest stability check: its outcome and a one-line summary."""
+        self._stability_outcome.setText(tr(outcome))
+        self._stability_detail.setText(detail)
 
     def retranslate_dynamic_copy(self) -> None:
         """Re-applies the copy that ``localize_widget_tree`` cannot recover.

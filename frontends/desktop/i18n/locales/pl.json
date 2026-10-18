@@ -4854,5 +4854,16 @@
   "On": "Wł.",
   "HelixSR {version} is selected. Install or Update brings it in.": "Wybrano HelixSR {version}. Zainstaluj lub Aktualizuj go doda.",
   "This game is no longer in Steam's non-Steam games.": "Tej gry nie ma już wśród gier spoza Steam w Steam.",
-  "This HelixSR release is not on offer.": "To wydanie HelixSR nie jest dostępne."
+  "This HelixSR release is not on offer.": "To wydanie HelixSR nie jest dostępne.",
+  "Test stability": "Testuj stabilność",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "Uruchamia memtest_vulkan na 10 minut przy zegarach governora i obserwuje dziennik jądra pod kątem błędów GPU. Nic nie jest zmieniane; niestabilne GPU może zawiesić płytę.",
+  "Stability check": "Test stabilności",
+  "Not run": "Nie uruchomiono",
+  "memtest_vulkan with an amdgpu fault watch": "memtest_vulkan z obserwacją błędów amdgpu",
+  "Could not open the stability check": "Nie udało się otworzyć testu stabilności",
+  "Opened the GPU stability check in the console.": "Otwarto test stabilności GPU w konsoli.",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} min przy {clock} MHz, krawędź {edge} °C · {when}",
+  "The GPU stability check could not start.": "Nie udało się uruchomić testu stabilności GPU.",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "Limit był poza zakresem, było za mało wolnej pamięci, pobrany memtest_vulkan był uszkodzony albo brakuje plików Control Center. GPU nie zostało obciążone i nic nie zmieniono.",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "Przeczytaj szczegóły techniczne. Zamknij programy zużywające dużo pamięci lub ustaw limity w zakresie i spróbuj ponownie. Jeśli pobieranie nie przeszło kontroli SHA-256, spróbuj później; jeśli brakuje CLI, zainstaluj ponownie Control Center."
 }

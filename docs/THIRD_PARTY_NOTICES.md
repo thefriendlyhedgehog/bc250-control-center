@@ -54,3 +54,11 @@ Every canonical URL was checked and returned HTTP 200: on 29 August 2026, and th
 | [PAPPL](https://github.com/michaelrsweet/pappl) | Printing framework reference | Reference only |
 | [pappl-retrofit](https://github.com/OpenPrinting/pappl-retrofit) | Legacy printer support reference | Reference only |
 | [BlueZ](https://github.com/bluez/bluez) | Bluetooth compatibility reference | Reference only |
+
+## Runtime tools
+
+Downloaded only when the user agrees, and not part of the Official repositories panel above.
+
+| Source | Role in BC250 Control Center | Boundary |
+|---|---|---|
+| [memtest_vulkan](https://github.com/GpuZelenograd/memtest_vulkan) | Load of the GPU stability check (GPU › Test stability, or `bc250-control-center-cli stability run`) | Integrated per-user workflow: release `v0.5.0` (DesktopLinux x86_64) is downloaded at runtime after confirmation, verified against the SHA-256 GitHub publishes for it, and only its binary is unpacked under the user's data folder; nothing is redistributed. zlib upstream |

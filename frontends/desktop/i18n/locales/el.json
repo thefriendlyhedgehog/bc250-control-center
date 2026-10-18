@@ -4854,5 +4854,16 @@
   "On": "Ενεργό",
   "HelixSR {version} is selected. Install or Update brings it in.": "Επιλέχθηκε το HelixSR {version}. Η Εγκατάσταση ή η Ενημέρωση το φέρνει.",
   "This game is no longer in Steam's non-Steam games.": "Αυτό το παιχνίδι δεν είναι πλέον στα παιχνίδια εκτός Steam του Steam.",
-  "This HelixSR release is not on offer.": "Αυτή η έκδοση του HelixSR δεν είναι διαθέσιμη."
+  "This HelixSR release is not on offer.": "Αυτή η έκδοση του HelixSR δεν είναι διαθέσιμη.",
+  "Test stability": "Έλεγχος σταθερότητας",
+  "Run memtest_vulkan for 10 minutes at the governor's clocks and watch the kernel log for GPU faults. Nothing is changed; an unstable GPU can hang the board.": "Εκτελεί το memtest_vulkan για 10 λεπτά στις συχνότητες του διαχειριστή και παρακολουθεί το αρχείο καταγραφής του πυρήνα για σφάλματα της GPU. Τίποτα δεν αλλάζει· μια ασταθής GPU μπορεί να κολλήσει την πλακέτα.",
+  "Stability check": "Δοκιμή σταθερότητας",
+  "Not run": "Δεν εκτελέστηκε",
+  "memtest_vulkan with an amdgpu fault watch": "memtest_vulkan με παρακολούθηση σφαλμάτων amdgpu",
+  "Could not open the stability check": "Δεν ήταν δυνατό το άνοιγμα της δοκιμής σταθερότητας",
+  "Opened the GPU stability check in the console.": "Η δοκιμή σταθερότητας της GPU άνοιξε στην κονσόλα.",
+  "{minutes} min at {clock} MHz, edge {edge} °C · {when}": "{minutes} λεπ. στα {clock} MHz, άκρη {edge} °C · {when}",
+  "The GPU stability check could not start.": "Η δοκιμή σταθερότητας της GPU δεν μπόρεσε να ξεκινήσει.",
+  "A limit was outside its range, too little memory was free, the memtest_vulkan download was not intact, or the Control Center files are incomplete. The GPU was not loaded and nothing was changed.": "Ένα όριο ήταν εκτός εύρους, η ελεύθερη μνήμη ήταν πολύ λίγη, η λήψη του memtest_vulkan δεν ήταν ακέραιη ή λείπουν αρχεία του Control Center. Η GPU δεν φορτώθηκε και τίποτα δεν άλλαξε.",
+  "Read the technical detail. Close programs that use a lot of memory or keep the limits in range, then try again. If the download failed its SHA-256 check, try again later; if the CLI is missing, reinstall Control Center.": "Διαβάστε τη τεχνική λεπτομέρεια. Κλείστε προγράμματα που χρησιμοποιούν πολλή μνήμη ή κρατήστε τα όρια εντός εύρους και δοκιμάστε ξανά. Αν η λήψη απέτυχε στον έλεγχο SHA-256, δοκιμάστε αργότερα· αν λείπει το CLI, επανεγκαταστήστε το Control Center."
 }
